@@ -1,11 +1,19 @@
-﻿using System;
+﻿
+using System;
 namespace ConsoleUI
 {
-    public class Motorcycle
+    public class Motorcycle : Vehicle
     {
-        public Motorcycle()
+
+        bool HasSideCart { get; set; } = true;
+
+        public override void DriveAbstract()
         {
+            Console.WriteLine($"You ride the {Make}"); ;
         }
+
+        public override int DoorNumber { get; set; } = 0;
+
     }
 }
 

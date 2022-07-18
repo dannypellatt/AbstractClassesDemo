@@ -1,10 +1,15 @@
 ﻿using System;
 namespace ConsoleUI
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public Car()
+
+
+        bool HasTrunk { get; set; } = true;
+
+        public override void DriveAbstract()
         {
+            throw new NotImplementedException();
         }
     }
 }
